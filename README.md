@@ -5,20 +5,20 @@ An explainable recommendation system that analyzes a candidate's PDF resume, com
 ---
 
 ## 🚀 Key Features
-* **Automated PDF Resume Parsing:** Extracts and normalizes text directly from uploaded PDF resumes.
-* **Hybrid Recommendation Engine:** Combines **Content-Based Filtering** (TF-IDF + Cosine Similarity) with **Case-Based Reasoning** (role/category constraint filtering).
-* **Match Scoring:** Calculates a percentage similarity score for each recommended job.
-* **Personalized Skill-Gap Analysis:** Compares job requirements against the candidate's resume to highlight both **Matched Skills** and **Missing Skills**.
-* **Interactive Web Interface:** Built with Streamlit for seamless testing and demonstration.
+- **Automated PDF Resume Parsing:** Extracts and normalizes text directly from uploaded PDF resumes.
+- **Hybrid Recommendation Engine:** Combines **Content-Based Filtering** (TF-IDF + Cosine Similarity) with **Case-Based Reasoning** (role/category constraint filtering).
+- **Match Scoring:** Calculates a percentage similarity score for each recommended job.
+- **Personalized Skill-Gap Analysis:** Compares job requirements against the candidate's resume to highlight both **Matched Skills** and **Missing Skills**.
+- **Interactive Web Interface:** Built with Streamlit for seamless testing and demonstration.
 
 ---
 
 ## 🛠️ Tech Stack
-* **Language:** Python 3.9+
-* **Frontend / GUI:** Streamlit
-* **Machine Learning & NLP:** Scikit-Learn (TF-IDF, Cosine Similarity), NLTK
-* **Data Processing:** Pandas, NumPy
-* **PDF Extraction:** pypdf
+- **Language:** Python 3.9+
+- **Frontend / GUI:** Streamlit
+- **Machine Learning & NLP:** Scikit-Learn (TF-IDF, Cosine Similarity), NLTK
+- **Data Processing:** Pandas, NumPy
+- **PDF Extraction:** pypdf
 
 ---
 
@@ -32,3 +32,32 @@ Resume_job_recommender/
 ├── prepare_data.py         # Data preprocessing script for raw Kaggle datasets
 ├── requirements.txt        # Required Python dependencies
 └── README.md               # Project documentation
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/YOUR-USERNAME/Resume-Job-Recommender.git](https://github.com/YOUR-USERNAME/Resume-Job-Recommender.git)
+   cd Resume-Job-Recommender
+   ```
+
+2. **Install required libraries:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the application:**
+   ```bash
+   streamlit run app.py
+   ```
+
+---
+
+## 📊 How It Works
+1. **Text Preprocessing:** Removes punctuation, special characters, and English stopwords from both the resume and job descriptions.
+2. **Case-Based Filtering:** Filters the job pool based on the user's selected target role constraint in the sidebar.
+3. **Vectorization & Ranking:** Converts text into TF-IDF vectors and ranks jobs using Cosine Similarity.
+4. **Skill-Gap Detection:** Performs exact keyword matching against the `required_skills` column to identify skill gaps.
