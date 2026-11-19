@@ -40,7 +40,7 @@ Resume_job_recommender/
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YOUR-USERNAME/Resume-Job-Recommender.git](https://github.com/YOUR-USERNAME/Resume-Job-Recommender.git)
+   git clone [https://github.com/s-tasbiha-s/Resume-Job-Recommender.git](https://github.com/s-tasbiha-s/Resume-Job-Recommender.git)
    cd Resume-Job-Recommender
    ```
 
